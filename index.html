@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Verificar Municipio de Jaén</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>¿Está en Jaén?</h1>
+    <form id="municipio-form">
+      <label for="municipio">Introduce un municipio:</label>
+      <input type="text" id="municipio" name="municipio" required />
+      <datalist id="lista-municipios"></datalist>
+      <button type="submit">Verificar</button>
+      <button type="reset">Limpiar</button>
+    </form>
+    <p id="resultado"></p>
+
+    <!-- Sonidos -->
+    <audio id="sound-correct" src="https://actions.google.com/sounds/v1/cartoon/clang_and_wobble.ogg" preload="auto"></audio>
+    <audio id="sound-wrong" src="https://actions.google.com/sounds/v1/cartoon/clang.ogg" preload="auto"></audio>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
